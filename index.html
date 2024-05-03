@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laduree blossom</title>
+    <script src="assets\script\javascript.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <head>
+        ...
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, italic, Verdana, sans-serif; 
+                color: #333; 
+                background-color: #f7c6d8; 
+            }
+    
+            .navbar {
+                background-color: #f3c7f1; 
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+    
+            .navbar-brand {
+                font-weight: bold;
+                color: #b93c87; 
+                font-size: xx-large;
+                font-style: italic;
+            }
+    
+            .nav-link {
+                color: #5f6471; 
+            }
+    
+            .nav-link:hover {
+                color: #3498db; 
+            }
+    
+            h1, h2, h3, h4, h5, h6 {
+                color: #333; 
+            }
+    
+            .btn-primary {
+                background-color: #f9a1c9; 
+                border-color: #fc98bd; 
+            }
+    
+            .btn-primary:hover {
+                background-color: #f890bc; 
+                border-color: #f896d1;
+            }
+    
+            .card {
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+                transition: transform .3s ease-in-out; 
+            }
+    
+            .card:hover {
+                transform: scale(1.05); 
+            }
+    
+            .card-img-top {
+                height: 200px; 
+                object-fit: cover; 
+            }
+    
+            footer {
+                background-color: #343a40; 
+                color: #e680a9; 
+                padding: 20px; 
+            }
+    
+            footer a {
+                color: #88b2dc; 
+                text-decoration: none; 
+            }
+    
+            footer a:hover {
+                color: #ee86eb; 
+            }
+    
+            .video-container {
+            width: 45%; 
+            margin: 0 auto; 
+            }
+
+            #myVideo {
+                width: 45%;  
+                height: auto; 
+            }
+    
+
+        </style>
+    </head>
+    
+</head>
+<body>
+
+
+</html>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">laduree blossom</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#shop">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                    
+                </li>
+            </ul>
+        </div> 
+    </div>
+</nav>
+</body>  
+
+
+<section id="home" class="bg-light py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-center text-lg-start">
+                <h1>Welcome to Laduree, Your Flower Shop</h1>
+                <p class="lead">Discover the beauty and fragrance of fresh blooms at our store.</p>
+                <a href="#shop" class="btn btn-primary mt-3">Shop Now</a>
+            </div>
+            <video id="myVideo" controls loop muted>
+                <source src="assets/videobunga.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                  var myVideo = document.getElementById('myVideo');
+                  if (myVideo) {
+                    myVideo.play().catch(error => {
+                      console.error("Video play failed:", error);
+                    });
+                  }
+                });
+              </script>
+              
+            
+        </div>
+    </div>
+</section>
+<section id="about" class="py-5 bg-white">
+    <div class="container">
+        <h2 class="text-center mb-4">About Us</h2>
+        <p class="text-center">At Blossom, we are committed to bringing you the freshest flowers every day. Our passion for flowers is reflected in every arrangement we create, from birthdays to weddings and everything in between.</p>
+    </div>
+    <section id="shop" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Products</h2>
+            <div class="row">
+                <!-- Produk 1 -->
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div class="card">
+                        <img src="assets\bunga2.jpg" class="card-img-top" alt="Floral Bouquet">
+                        <div class="card-body">
+                            <h5 class="card-title">Floral Bouquet</h5>
+                            <p class="card-text">A beautiful arrangement of seasonal flowers.</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produk 2 -->
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div class="card">
+                        <img src="assets\bunga3.jpg" class="card-img-top" alt="Rose Deluxe">
+                        <div class="card-body">
+                            <h5 class="card-title">Rose Deluxe</h5>
+                            <p class="card-text">An elegant bouquet of red roses, perfect for special occasions.</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produk 3 -->
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div class="card">
+                        <img src="assets\bunga1.jpg" class="card-img-top" alt="Spring Mix">
+                        <div class="card-body">
+                            <h5 class="card-title">Spring Mix</h5>
+                            <p class="card-text">Brighten your day with a colorful mix of seasonal blooms.</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produk 4 -->
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div class="card">
+                        <img src="assets\bunga4.jpg" class="card-img-top" alt="Wedding Special">
+                        <div class="card-body">
+                            <h5 class="card-title">Wedding Special</h5>
+                            <p class="card-text">A sophisticated arrangement tailored for your big day.</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <section id="contact" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Gallery</h2>
+            <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"> 
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/bunga5.jpg" class="d-block w-100" alt="Beautiful Flowers 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/bunga6.jpg" class="d-block w-100" alt="Beautiful Flowers 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/bunga7.jpg" class="d-block w-100" alt="Beautiful Flowers 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+</section>
+<footer class="text-center text-lg-start bg-light text-muted">
+    <div class="text-center p-4" style="background-color: rgb(246, 175, 210);">
+        © 2024 Blossom Flower Shop - All Rights Reserved
+        <a href="#home" class="text-reset fw-bold">Back to top</a>
+    </div>
+</footer>
